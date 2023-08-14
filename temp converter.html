@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	h1{
+		text-align:center;
+		color:red;
+		font-size:50px;
+	}
+	div{
+		text-align:center;
+		font-size:25px;
+	}
+body{
+   background-image:url("sun.jpeg");
+   width:800;
+   height:600;
+}
+</style>
+</head>
+<body>
+<h1>Temperature Converter</h1><br>
+<div>
+<label>Enter Temperature:</label><br><br>
+<input type="number" id="val" name="Degrees"><br><br>
+From:<select id="op1">
+	<option value="celcius">celcius</option>
+	<option value="fahrenheit">fahrenheit</option>
+	<option value="kelvin">kelvin</option>
+</select> &nbsp &nbsp      
+To:<select id="op2">
+	<option value="celcius">celcius</option>
+	<option value="fahrenheit">fahrenheit</option>
+	<option value="kelvin">kelvin</option>
+</select><br><br>
+<label>Converted Temperature:</label><br><br>
+<input type="text" id="fah" name="fah">
+<button onclick="cal()">Convert</button>
+</div>
+<script>
+function cal(){
+	let val=document.getElementById("val");
+	var v=val.value;
+	var t1=document.getElementById("op1").value;
+	var t2=document.getElementById("op2").value;
+	if(t1=="celcius")
+	{
+		if(t2=="celcius")
+		{
+			let con=document.getElementById("fah");
+			con.value=v;
+		}
+		if(t2=="fahrenheit")
+		{
+			let digit=(v*9/5)+32;
+			let con=document.getElementById("fah");
+			con.value=digit;
+		}
+		if(t2=="kelvin")
+		{
+			let digit=v+273.15;
+			let con=document.getElementById("fah");
+			con.value=digit;
+		}
+	}
+	if(t1=="fahrenheit")
+	{
+		if(t2=="celcius")
+		{
+			let digit=(v-32)*5/9;
+			let con=document.getElementById("fah");
+			con.value=digit;
+		}
+		if(t2=="fahrenheit")
+		{
+			let con=document.getElementById("fah");
+			con.value=v;
+		}
+		if(t2=="kelvin")
+		{
+			let digit=(5/9)*(v+459.67);
+			let con=document.getElementById("fah");
+			con.value=digit;
+		}
+	}
+	if(t1=="kelvin")
+	{
+		if(t2=="celcius")
+		{
+			let digit=v-273.15;
+			let con=document.getElementById("fah");
+			con.value=digit;
+		}
+		if(t2=="fahrenheit")
+		{
+			let digit=(v-273.15)*9/5+32;
+			let con=document.getElementById("fah");
+			con.value=digit;
+		}
+		if(t2=="kelvin")
+		{
+			let con=document.getElementById("fah");
+			con.value=v;
+		}
+	}
+}
+</script>
+</body>
+</html>
