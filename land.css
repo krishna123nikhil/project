@@ -1,0 +1,130 @@
+  header{
+   width:100%;
+   height:100%;
+   background:url('aki.jpeg');
+   background-size:cover;
+   font-family: sans-serif;
+   background-color:skyblue;
+   }
+   nav{
+	   width:100%;
+	   height:100px;
+	   color:navy;
+	   display:flex;
+	   justify-content: space-around;
+	   align-items:center;
+	   
+   }
+   .logo{
+	   background-color:none;
+    border:none;
+    position:absolute;
+    top:10;
+	left:20;
+	letter-spacing:1px;
+	font-size:50px;
+	color:gold;
+   }
+   .menu {
+    background-color:skyblue;
+    border:green groove;
+    position:absolute;
+	align:center;
+    top:30;
+	left:920;
+	height:50px;
+	
+	   
+   }
+ body {
+  background-color: skyblue;
+  font-family: cursive;
+}
+.glow{
+	   background-color:none;
+    border:none;
+    position:absolute;
+    top:130;
+	left:400;
+	letter-spacing:1px;
+	font-size:40px;
+	color:red;
+   }
+
+
+   .dell{
+    background-color:skyblue;
+    border:#87CEEB;
+    position:absolute;
+	align:center;
+    top:490;
+	left:100;
+	letter-spacing:2px;
+	font-size:20px;
+	width:150px;
+	
+	   
+   }
+   .dello{
+	    background-color:none;
+    border:none;
+    position:absolute;
+	align:center;
+	width:250px;
+	height:100px;
+	top:400;
+	left:50;
+   }
+   .hplap{
+    background-color:skyblue;
+    border:#87CEEB;
+    position:absolute;
+	align:center;
+    top:490;
+	left:470;
+	letter-spacing:2px;
+	font-size:20px;
+	width:150px;
+   }
+   .hp{
+	    background-color:none;
+    border:none;
+    position:absolute;
+	align:center;
+	width:250px;
+	height:100px;
+	top:400;
+	left:420;
+   }
+   .lenov{
+    background-color:skyblue;
+    border:#87CEEB;
+    position:absolute;
+	align:center;
+    top:490;
+	left:870;
+	letter-spacing:2px;
+	font-size:20px;
+	width:150px;
+   }
+   .lenovy{
+	    background-color:none;
+    border:none;
+    position:absolute;
+	align:center;
+	width:250px;
+	height:100px;
+	top:400;
+	left:820;
+   }
+   .footer{
+	    background-color:none;
+    border:none;
+    position:absolute;
+	align:bottom;
+	width:none;
+	height:none;
+	top:900;
+	left:100;
+   }
+	   
